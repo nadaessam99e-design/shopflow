@@ -32,11 +32,11 @@ jobs:
 
       - name: Tag Image
         run: |
-          docker tag shopflow:latest <114223852322>.dkr.ecr.us-east-1.amazonaws.com/shopflow:latest
+          docker tag shopflow:latest 114223852322.dkr.ecr.us-east-1.amazonaws.com/shopflow:latest
 
       - name: Push Image
         run: |
-          docker push <114223852322>.dkr.ecr.us-east-1.amazonaws.com/shopflow:latest
+          docker push 114223852322.dkr.ecr.us-east-1.amazonaws.com/shopflow:latest
 
       - name: Terraform Init
         working-directory: terraform
